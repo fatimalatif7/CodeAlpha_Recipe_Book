@@ -1,0 +1,150 @@
+/* Styling for the page */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f2f2f2;
+  color: #333;
+  margin: 0;
+  padding: 0;
+}
+
+nav {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 100;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  margin: 150px 5%;
+}
+
+.left-column {
+  width: 30%;
+}
+
+.right-column {
+  width: 65%;
+}
+
+/* Styling for the Add/Edit Recipes form */
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+input[type="text"],
+textarea {
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  width: 100%;
+  box-sizing: border-box;
+  font-size: 14px;
+}
+
+#add-edit-button {
+  padding: 10px;
+  background-color: #333;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color
+  0.3s;
+}
+
+#add-edit-button:hover {
+  background-color: #555;
+}
+
+/* Recipes List styling */
+#recipe-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-gap: 20px;
+}
+
+#no-recipes {
+  display: flex;
+  background-color: #FFCCCC;
+  padding: 20px;
+  border-radius: 8px;
+  margin-top: 44px;
+  color: #d9534f;
+  font-weight: bold;
+}
+
+/* Recipe item styling */
+.recipe {
+  border: 1px solid #ccc;
+  padding: 15px;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, .2);
+  background-color: white;
+}
+
+.recipe h3 {
+  margin: 0 0 10px;
+  font-size: 20px;
+  font-weight: bold;
+  color: #333;
+}
+
+.recipe p {
+  font-size: 14px;
+  margin: 0 0 10px;
+}
+
+/* Edit button styling */
+.edit-button {
+  background-color: #007BFF;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 5px 10px;
+  margin-right: 10px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background-color 0.3s;
+}
+
+.edit-button:hover {
+  background-color: #0056b3;
+}
+
+/* Delete button styling */
+.delete-button {
+  background-color: #dc3545;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 5px 10px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background-color 0.3s;
+}
+
+.delete-button:hover {
+  background-color: #c82333;
+}
+
+/* Search label styling */
+label[for="search-box"] {
+  display: block;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
